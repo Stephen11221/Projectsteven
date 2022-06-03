@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+}
+
+#container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 2.5fr 25fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header page page2";
+}
+
+#header {
+    border: 2px;
+    grid-area: header;
+    border-style: groove;
+    border-color: black;
+}
+
+#page {
+    border: 2px;
+    grid-area: page;
+    border-style: groove;
+    border-color: black;
+}
+
+#page2 {
+    grid-area: page2;
+    border: 2px;
+    border-color: black;
+    border-style: groove;
+}
