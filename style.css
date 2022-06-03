@@ -1,32 +1,63 @@
-body {
-    text-align: center;
-}
-
-#container {
+.container {
     display: grid;
     height: 100vh;
-    grid-template-rows: 2.5fr 25fr;
+    grid-template-rows: 0.1fr 2.7fr 2.4fr 0.1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "header page page2";
-}
-
-#header {
-    border: 2px;
-    grid-area: header;
-    border-style: groove;
+    border-style: solid groove;
     border-color: black;
+    border-bottom: none;
+    grid-template-areas: "nav nav nav " "page1 page2 page3" "page4 politics politics" "page4 technology technology" "page4 local local" "page4 opinion opinion " "page4 sport sport";
 }
 
-#page {
-    border: 2px;
-    grid-area: page;
+nav {
+    grid-area: nav;
+    text-align: center;
+    padding: center;
+}
+
+#page1 {
+    grid-area: page1;
     border-style: groove;
     border-color: black;
 }
 
 #page2 {
     grid-area: page2;
-    border: 2px;
-    border-color: black;
     border-style: groove;
+    border-color: black;
+}
+
+#page3 {
+    grid-area: page3;
+    border-style: groove;
+    border-color: black;
+}
+
+#page4 {
+    grid-area: page4;
+}
+
+#politics {
+    grid-area: politics;
+    background-color: red;
+}
+
+#technology {
+    grid-area: technology;
+    background-color: blue
+}
+
+#local {
+    grid-area: local;
+    background-color: yellow;
+}
+
+#opinion {
+    grid-area: opinion;
+    background-color: blueviolet;
+}
+
+#sport {
+    grid-area: sport;
+    background-color: orange;
 }
